@@ -25,7 +25,7 @@ document.getElementById('submitButton').addEventListener('click', function() {
     let fieldMissing = "";
 
     //Check fields for input,
-    // concat error string to prompt user to add some input to that field
+    // contact error string to prompt user to add some input to that field
     if (document.getElementById('fullName').value == "") {
     fieldMissing += "<br>First Name";
     }
