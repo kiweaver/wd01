@@ -2,6 +2,8 @@ const page1 = document.querySelector(".page-1")
 const page2 = document.querySelector(".page-2")
 const btnUp = document.querySelector(".btn-up")
 const btnDown = document.querySelector(".btn-down")
+const submit = document.querySelector("#submitButton")
+
 
 btnUp.addEventListener("click", () =>{
     page1.classList.add("up")
@@ -12,8 +14,11 @@ btnDown.addEventListener("click", () =>{
     page1.classList.remove("up")
 })
 
-//page three - contact page
-document.getElementById('submitButton').addEventListener('click', function() {
+
+//page three - contact page.... 
+//I couldn't get this to work because it cancels out the page 1 and page 2 addEventListener. 
+
+submit.addEventListener("click", () =>{
 
     //This function checks for a valid email address
     function isEmail(email) {
