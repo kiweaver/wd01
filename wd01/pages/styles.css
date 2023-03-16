@@ -1,0 +1,439 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: transparent;
+    border: none;
+    cursor: pointer;
+}
+
+.page {
+    height: 100vh;
+    overflow: hidden;
+}
+
+/* page one */
+
+.page-1 {
+    height: 100vh;
+    width: 100vw;
+    background-color: pink;
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    transition: all .5s linear;
+}
+
+/* Quote*/
+
+.quotes {
+    font-size: 15px;
+    position: absolute;
+    right: 100px;
+    top: 30%;
+    width: 200px;
+    line-height: 2;
+    font-style: italic;
+}
+
+.author {
+    font-style: normal;
+    font-weight: bold;
+}
+
+hr {
+    border: none;
+    height: 2px;
+    width: 200px;
+    background-color: rgb(131, 131, 131);
+}
+
+.hr-1 {
+    position: absolute;
+    bottom: 20px;
+}
+
+.hr-2 {
+    position: absolute;
+    top: 20px;
+    right: 0;
+}
+
+
+.page-1 ul {
+    font-size: 15px;
+    list-style: none;
+    display: flex;
+    gap: 60px;
+    position: absolute;
+    top: 40%;
+    transform: rotate(90deg) translateY(-110px);
+    right: 0;
+}
+
+.page-1 h1, .page-3 h1 {
+    font-size: 30px;
+    position: absolute;
+    top: 50px;
+    left: 100px;
+    font-family: 'Times New Roman', Times, serif;
+    font-weight: bold;
+    color: #111;
+    text-transform: uppercase;
+}
+
+/* collage/grids page one */
+
+.collage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+}
+
+.collage-1 {
+    position: absolute;
+    display: grid;
+    place-items: center;
+    grid-template-columns: repeat(5, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 600px;
+    width: 500px;
+}
+
+.collage-1 img {
+    height: 280px;
+    transition: all .5s ease;
+}
+
+.collage-1 img:hover {
+    box-shadow: 0px 5px 5px 2px rgba(0, 0, 0, 0.2);
+    scale: 1.1;
+}
+
+/* Images page one */
+
+.img-1 {
+    grid-area: 1/1/3/4;
+}
+
+.img-1 img {
+    height: 300px;
+}
+
+.img-2 {
+    grid-area: 1/4/2/6;
+}
+
+.img-3 {
+    grid-area: 2/4/3/6;
+}
+
+.page-no {
+    font-size: 70px;
+    position: absolute;
+    top: 180px;
+    left: -15px;
+    font-family: 'Franklin Gothic Medium',
+        'Arial Narrow', Arial, sans-serif;
+}
+
+.page-1 .page-no {
+    color: #51a4bc;
+}
+
+.page-1.up {
+    margin-top: -100vh;
+}
+
+.page-1.down {
+    margin-top: 0;
+}
+
+/* button page one */
+
+.page-1 button img {
+    transform: rotate(90deg);
+}
+
+.btn-up,
+.btn-down {
+    position: absolute;
+    bottom: 20px;
+    right: 20px;
+}
+
+.btn-up img,
+.btn-down img {
+    height: 20px;
+}
+
+/* page one end */
+
+/******** page two *********/
+
+.page-2 {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(147, 174, 255);
+    position: relative;
+    transition: all .5s linear;
+}
+
+.page-2 button img {
+    transform: rotate(270deg);
+}
+
+.box-2 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+/* collage/ grids page two */
+
+.collage-2 {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    height: 500px;
+    width: 800px;
+    align-items: center;
+}
+
+.collage-2 img {
+    height: 200px;
+    transition: all .5s ease;
+}
+
+.collage-2 img:hover {
+    box-shadow: 0px 5px 5px 2px rgba(0, 0, 0, 0.2);
+    scale: 1.1;
+}
+
+/** Hire button page two **/
+
+.hire-btn {
+    border: 2px solid #000;
+    padding: 5px;
+    margin-top: 15px;
+    width: 150px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    color: #000;
+    transition: all .5s ease;
+}
+
+.hire-btn:hover {
+    background-color: #fff;
+    box-shadow: 0px 5px 5px 2px rgba(0, 0, 0, 0.2);
+}
+
+/***************** page two end ***************/
+
+
+/********* page three **************/
+
+.page-3 {
+    height: 100vh;
+    width: 100vw;
+    background-color: rgb(147, 174, 255);
+    background-repeat: no-repeat;
+    background-size: cover;
+    position: relative;
+    transition: all .5s linear;
+}
+
+.box-3 {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+}
+
+
+/* home button page 3*/
+.home-btn {
+    border: 2px solid #000;
+    padding: 5px;
+    margin-top: 15px;
+    position: absolute;
+    top: 5px;
+    left: 100px;
+    border-radius: 5px;
+    text-transform: uppercase;
+    font-size: 15px;
+    font-weight: bold;
+    color: #000;
+    transition: all .5s ease;
+}
+
+.home-btn:hover {
+    background-color: #fff;
+    box-shadow: 0px 5px 5px 2px rgba(0, 0, 0, 0.2);
+}
+
+/* collage /grid page three */
+
+.collage-3 {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    height: 500px;
+    width: 800px;
+    align-items: center;
+}
+
+.collage-3 iframe {
+    display: grid;
+    grid-template-columns: repeat(1, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    height: 250px;
+    width: 350px;
+    transition: all .5s ease;
+}
+
+.collage-3 figure:hover {
+    box-shadow: 0px 5px 5px 2px rgba(0, 0, 0, 0.2);
+    scale: 1.1;
+}
+
+/*contact page image center*/
+.center {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    width: 50%;
+    opacity: 70%;
+    transform: scale(0.9);
+}
+
+/* Form input layout*/
+input {
+    width: 300px;
+    padding: 5px 5px 12px 5px;
+    font-size: 10px;
+    border: 1px solid grey;
+}
+
+/* Form label layout css*/
+label {
+    float: left;
+    position: relative;
+    top: 12px;
+    width: 200px;
+}
+
+/* Form css */
+.form-element {
+    margin-bottom: 10px;
+}
+
+/* Form submit and success/error message css*/
+#submitButton {
+    background-color: green;
+    color: #fff;
+    width: 130px;
+    margin-left: 200px;
+    border-radius: 5px;
+    transition: all .5s ease
+}
+
+#submitButton:hover {
+    background-color: aquamarine;
+    color: #000;
+    transform: scale(1.05);
+}
+
+#errorMessage {
+    color: red;
+    font-size: 80% !important;
+}
+
+#successMessage {
+    color: green;
+    font-size: 80% !important;
+    display: none;
+    margin-bottom: 20px;
+}
+
+/* Image grid css */
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit), minmax(200px, 1fr);
+    grid-gap: 20px;
+    padding: 20px;
+}
+
+.grid-item {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    overflow: hidden;
+}
+
+.grid-item img {
+    width: 100%;
+    height: 100%;
+}
+
+/*A link tag psuedo-code*/
+
+a:link {
+    color: red;
+}
+
+/* visited link */
+a:visited {
+    color: green;
+}
+
+/* mouse over link */
+a:hover {
+    color: hotpink;
+}
+
+/* selected link */
+a:active {
+    color: blue;
+}
+
+/******************** media queries *******************/
+
+@media(max-width:1000px) {
+    .quotes {
+        display: none;
+    }
+
+    .collage-2 {
+        display: none;
+    }
+
+    .side {
+        text-align: center;
+    }
+
+    .page-1 h1 {
+        font-size: 30px;
+    }
+}
+
+@media(max-width:650px) {
+    .collage-1 {
+        width: 350px;
+        height: 350px;
+    }
+
+    .collage-1 img {
+        height: 200px;
+    }
+
+    .social {
+        display: none;
+    }
+}
