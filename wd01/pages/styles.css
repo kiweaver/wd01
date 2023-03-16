@@ -44,6 +44,12 @@ button {
     font-weight: bold;
 }
 
+/* pseudo-element - camera emoji */
+
+.author::after{
+    content: "📸"
+}
+
 hr {
     border: none;
     height: 2px;
